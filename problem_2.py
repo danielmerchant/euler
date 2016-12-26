@@ -9,4 +9,15 @@ even-valued terms. """
 
 totalSum = 0
 evenSum = 0
+indexOne = 1
+indexTwo = 2
 
+while (indexTwo < 4000000):
+    indexSum = indexOne + indexTwo
+    if (indexSum % 2 == 0):
+        evenSum += indexSum
+    totalSum += indexSum
+    indexOne = indexTwo
+    indexTwo = indexSum
+
+print(evenSum)
